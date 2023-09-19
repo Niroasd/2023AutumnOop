@@ -4,17 +4,17 @@ public class UseFoodProducts {
         var Mango = new FoodProduct();
         var Watermelon = new FoodProduct();
 
-        Mango.type = "Mango whole";
-        Mango.cost = 0.32;
-        Mango.servings = 4;
-        Mango.weight = 72.1;
-        Mango.caloriesperserving = 28.42;
+        Mango.setType("Mango whole");
+        Mango.setCost(0.32);
+        Mango.setServings(4);
+        Mango.setWeight(-2.0);
+        Mango.setCaloriesperserving(28.42);
 
-        Watermelon.type = "sliced melon";
-        Watermelon.cost = 1.30;
-        Watermelon.servings = 1;
-        Watermelon.weight = 400.1;
-        Watermelon.caloriesperserving = 1.2345;
+        Watermelon.setType("");
+        Watermelon.setCost(1.30);
+        Watermelon.setServings(1);
+        Watermelon.setWeight(400.1);
+        Watermelon.setCaloriesperserving(1.2345);
 
         Mango.display();
         Watermelon.display();
