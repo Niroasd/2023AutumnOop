@@ -53,6 +53,14 @@ public class Student {
         }
     }
 
+    // default constructor
+    public Student() {
+        this.name = "";
+        this.id = 0;
+        this.gpa = 0.0;
+        this.major = null;
+    }
+
     // Constructorit,
     // eka ilman gpa ja major sit niitten kanssa.
 

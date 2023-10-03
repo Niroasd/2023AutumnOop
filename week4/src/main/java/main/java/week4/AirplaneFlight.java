@@ -15,9 +15,9 @@ public class AirplaneFlight {
     private int flightNumber;
 
     private Airports departureAirport;
-    private int departureTime;
+    private LocalTime departureTime;
     private Airports arrivalAirport;
-    private int arrivalTime;
+    private LocalTime arrivalTime;
 
     // getters and setters.
 
@@ -45,25 +45,27 @@ public class AirplaneFlight {
         this.arrivalAirport = arrivalAirport;
     }
 
-    public int getDepartureTime() {
+    public LocalTime getDepartureTime() {
         return this.departureTime;
     }
 
-    public void setDepartureTime(int departureTime) {
+    public void setDepartureTime(LocalTime departureTime) {
         this.departureTime = departureTime;
     }
 
-    public int getArrivalTime() {
+    public LocalTime getArrivalTime() {
         return this.arrivalTime;
     }
 
-    public void setArrivalTime(int arrivalTime) {
+    public void setArrivalTime(LocalTime arrivalTime) {
         this.arrivalTime = arrivalTime;
     }
 
     // constructor with dep and arrival times.
-    public AirplaneFlight(int flightNumber, Airports departureAirport, int departureTime, Airports arrivalAirport,
-            int arrivalTime) {
+    public AirplaneFlight(int flightNumber, Airports departureAirport, LocalTime departureTime,
+            Airports arrivalAirport,
+            LocalTime arrivalTime) {
+
         this.flightNumber = flightNumber;
         this.departureAirport = departureAirport;
         this.departureTime = departureTime;
@@ -73,10 +75,9 @@ public class AirplaneFlight {
 
     // constructor withOUT dep and arrival times.
     public AirplaneFlight(int flightNumber, Airports departureAirport, Airports arrivalAirport) {
+
         this.flightNumber = flightNumber;
         this.departureAirport = departureAirport;
-        this.departureTime = 0;
         this.arrivalAirport = arrivalAirport;
-        this.arrivalTime = 0;
     }
 }
